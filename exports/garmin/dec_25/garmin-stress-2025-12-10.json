@@ -1,0 +1,2042 @@
+[
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-09T23:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T00:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T01:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T02:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T03:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T04:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T05:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T06:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T07:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T08:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:51:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:54:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T09:57:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:03:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:09:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:12:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:27:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:33:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:39:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:42:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:45:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:48:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:51:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:54:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T10:57:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:00:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:03:00+00:00",
+    "stress_level": 97,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:09:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:12:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:21:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:24:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:27:00+00:00",
+    "stress_level": 82,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:30:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:33:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:39:00+00:00",
+    "stress_level": 61,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:42:00+00:00",
+    "stress_level": 85,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:45:00+00:00",
+    "stress_level": 93,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:48:00+00:00",
+    "stress_level": 95,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:51:00+00:00",
+    "stress_level": 91,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:54:00+00:00",
+    "stress_level": 66,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T11:57:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:00:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:03:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:06:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:09:00+00:00",
+    "stress_level": 90,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:12:00+00:00",
+    "stress_level": 99,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:15:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:21:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:24:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:27:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:30:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:33:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:36:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:39:00+00:00",
+    "stress_level": 48,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:42:00+00:00",
+    "stress_level": 25,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:45:00+00:00",
+    "stress_level": 46,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:48:00+00:00",
+    "stress_level": 42,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:51:00+00:00",
+    "stress_level": 46,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:54:00+00:00",
+    "stress_level": 34,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T12:57:00+00:00",
+    "stress_level": 38,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:00:00+00:00",
+    "stress_level": 31,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:03:00+00:00",
+    "stress_level": 31,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:06:00+00:00",
+    "stress_level": 34,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:09:00+00:00",
+    "stress_level": 25,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:12:00+00:00",
+    "stress_level": 25,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:15:00+00:00",
+    "stress_level": 28,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:18:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:21:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:24:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:27:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:30:00+00:00",
+    "stress_level": 22,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:33:00+00:00",
+    "stress_level": 21,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:36:00+00:00",
+    "stress_level": 19,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:39:00+00:00",
+    "stress_level": 30,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:42:00+00:00",
+    "stress_level": 52,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:45:00+00:00",
+    "stress_level": -2,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:48:00+00:00",
+    "stress_level": 37,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:51:00+00:00",
+    "stress_level": 24,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:54:00+00:00",
+    "stress_level": 26,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T13:57:00+00:00",
+    "stress_level": 25,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:00:00+00:00",
+    "stress_level": 26,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:03:00+00:00",
+    "stress_level": 23,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:06:00+00:00",
+    "stress_level": 27,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:09:00+00:00",
+    "stress_level": 37,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:12:00+00:00",
+    "stress_level": 45,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:15:00+00:00",
+    "stress_level": 37,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:18:00+00:00",
+    "stress_level": 34,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:21:00+00:00",
+    "stress_level": 37,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:24:00+00:00",
+    "stress_level": 38,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:27:00+00:00",
+    "stress_level": 46,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:30:00+00:00",
+    "stress_level": 40,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:33:00+00:00",
+    "stress_level": 42,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:36:00+00:00",
+    "stress_level": 49,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:39:00+00:00",
+    "stress_level": 48,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:42:00+00:00",
+    "stress_level": 49,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:45:00+00:00",
+    "stress_level": 52,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:48:00+00:00",
+    "stress_level": 45,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:51:00+00:00",
+    "stress_level": 63,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:54:00+00:00",
+    "stress_level": 56,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T14:57:00+00:00",
+    "stress_level": 50,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:00:00+00:00",
+    "stress_level": 60,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:03:00+00:00",
+    "stress_level": 47,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:06:00+00:00",
+    "stress_level": 49,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:09:00+00:00",
+    "stress_level": 52,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:12:00+00:00",
+    "stress_level": 46,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:15:00+00:00",
+    "stress_level": 38,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:18:00+00:00",
+    "stress_level": 47,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:21:00+00:00",
+    "stress_level": 40,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:24:00+00:00",
+    "stress_level": 40,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:27:00+00:00",
+    "stress_level": 49,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:30:00+00:00",
+    "stress_level": 39,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:33:00+00:00",
+    "stress_level": 49,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:36:00+00:00",
+    "stress_level": -1,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:39:00+00:00",
+    "stress_level": 36,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:42:00+00:00",
+    "stress_level": 48,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:45:00+00:00",
+    "stress_level": 32,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:48:00+00:00",
+    "stress_level": 40,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:51:00+00:00",
+    "stress_level": 32,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:54:00+00:00",
+    "stress_level": 45,
+    "source": "stressValuesArray"
+  },
+  {
+    "date": "2025-12-10",
+    "timestamp": "2025-12-10T15:57:00+00:00",
+    "stress_level": 44,
+    "source": "stressValuesArray"
+  }
+]
