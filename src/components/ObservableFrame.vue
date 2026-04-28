@@ -3,6 +3,7 @@ defineProps<{
   title: string
   src: string
   description?: string
+  height?: string
 }>()
 </script>
 
@@ -17,6 +18,7 @@ defineProps<{
       <iframe
         :src="src"
         :title="title"
+        :style="{ minHeight: height ?? 'clamp(20rem, 56vh, 34rem)' }"
         loading="lazy"
         class="viz-frame"
         allowfullscreen
