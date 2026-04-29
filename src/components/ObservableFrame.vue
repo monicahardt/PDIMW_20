@@ -1,75 +1,66 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   title?: string
   src: string
   description?: string
   height?: string
   bare?: boolean
-}>()
+  designWidth?: number
+}>(), {
+  designWidth: 760,
+})
 
-const iframeRef = ref<HTMLIFrameElement | null>(null)
-const iframeHeight = ref(props.height ?? 'clamp(20rem, 56vh, 34rem)')
+const wrapperRef = ref<HTMLElement | null>(null)
+const wrapperWidth = ref(props.designWidth)
+const wrapperHeight = ref(0)
 
-const iframeStyle = computed(() => ({
-  height: iframeHeight.value,
-  minHeight: iframeHeight.value,
+let resizeObserver: ResizeObserver | undefined
+
+const visualHeight = computed(() => props.height ?? 'clamp(14rem, 42vh, 24rem)')
+const frameScale = computed(() => Math.min(1, wrapperWidth.value / props.designWidth))
+const frameWidth = computed(() => Math.max(wrapperWidth.value, props.designWidth))
+const frameHeight = computed(() => {
+  if (!wrapperHeight.value) {
+    return visualHeight.value
+  }
+
+  return `${Math.ceil(wrapperHeight.value / frameScale.value)}px`
+})
+
+const wrapperStyle = computed(() => ({
+  height: visualHeight.value,
 }))
 
-function readEmbedHeight(payload: unknown): number | null {
-  if (typeof payload === 'number' && Number.isFinite(payload)) {
-    return payload
-  }
+const frameStyle = computed(() => ({
+  width: `${frameWidth.value}px`,
+  height: frameHeight.value,
+  minHeight: frameHeight.value,
+  transform: `scale(${frameScale.value})`,
+}))
 
-  if (typeof payload === 'string') {
-    const trimmed = payload.trim()
-    const parsedNumber = Number(trimmed)
-
-    if (Number.isFinite(parsedNumber)) {
-      return parsedNumber
-    }
-
-    try {
-      return readEmbedHeight(JSON.parse(trimmed))
-    } catch {
-      return null
-    }
-  }
-
-  if (payload && typeof payload === 'object') {
-    const record = payload as Record<string, unknown>
-
-    if (typeof record.height === 'number' && Number.isFinite(record.height)) {
-      return record.height
-    }
-  }
-
-  return null
-}
-
-function syncIframeHeight(event: MessageEvent) {
-  const iframe = iframeRef.value
-
-  if (!iframe || event.source !== iframe.contentWindow) {
+const updateFrameSize = () => {
+  if (!wrapperRef.value) {
     return
   }
 
-  const nextHeight = readEmbedHeight(event.data)
-
-  if (!nextHeight) {
-    return
-  }
-
-  iframeHeight.value = `${Math.ceil(nextHeight)}px`
+  wrapperWidth.value = wrapperRef.value.clientWidth || props.designWidth
+  wrapperHeight.value = wrapperRef.value.clientHeight
 }
 
 onMounted(() => {
-  window.addEventListener('message', syncIframeHeight)
+  updateFrameSize()
+
+  resizeObserver = new ResizeObserver(updateFrameSize)
+
+  if (wrapperRef.value) {
+    resizeObserver.observe(wrapperRef.value)
+  }
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('message', syncIframeHeight)
+  resizeObserver?.disconnect()
 })
 </script>
 
@@ -80,12 +71,11 @@ onBeforeUnmount(() => {
       <p v-if="description">{{ description }}</p>
     </div>
 
-    <div class="iframe-wrap">
+    <div ref="wrapperRef" class="iframe-wrap" :style="wrapperStyle">
       <iframe
-        ref="iframeRef"
         :src="src"
         :title="title"
-        :style="iframeStyle"
+        :style="frameStyle"
         loading="lazy"
         class="viz-frame"
         scrolling="no"

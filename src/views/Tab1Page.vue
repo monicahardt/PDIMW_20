@@ -18,8 +18,13 @@ import ObservableFrame from '@/components/ObservableFrame.vue'
         <h2>Today's forecast</h2>
       </div>
       <ObservableFrame
-        src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecast%2CmobileTodayStressForecastTip"
-        height="31rem"
+        src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastInteractive"
+        height="21rem"
+        bare
+      />
+      <ObservableFrame
+        src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastTip"
+        height="11rem"
         bare
       />
     </section>
