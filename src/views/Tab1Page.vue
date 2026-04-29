@@ -13,21 +13,22 @@ import ObservableFrame from '@/components/ObservableFrame.vue'
       </p>
     </div>
 
-    <section class="card">
-      <h2>Stress snapshot</h2>
+    <section class="forecast-panel">
+      <div class="forecast-heading">
+        <h2>Today's forecast</h2>
+      </div>
       <ObservableFrame
-        title="Weekly stress overview"
-        description="A compact weekly heatmap for a fast read on where stress tends to cluster."
-        src="https://observablehq.com/embed/e28495b80f916eb9?cells=renderWeeklyHeatmap"
-        height="14rem"
+        src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecast%2CmobileTodayStressForecastTip"
+        height="31rem"
+        bare
       />
     </section>
 
     <section class="card">
-      <h2>Today’s focus</h2>
+      <h2>Today's focus</h2>
       <p>
-        Look for repeated high-stress pockets in the graph and use the Graphs
-        tab when you want to drill into the exact days behind them.
+        Use the forecast above as a quick read on today, then head into the
+        Graphs tab when you want to inspect the pattern behind the prediction.
       </p>
       <ul class="plain-list">
         <li>Protect mornings after poor sleep, since stress appears to climb early on those days.</li>

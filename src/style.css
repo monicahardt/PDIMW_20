@@ -96,12 +96,33 @@ code {
   backdrop-filter: blur(12px);
 }
 
+.viz-stack {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.forecast-panel {
+  display: grid;
+  gap: 0.85rem;
+  margin-inline: calc(var(--page-padding) * -1);
+  padding-inline: var(--page-padding);
+}
+
+.forecast-heading {
+  padding-inline: 0.1rem;
+}
+
 .iframe-wrap {
   border-radius: 16px;
   overflow: hidden;
   background: #e5e7eb;
   width: 100%;
   max-width: 100%;
+}
+
+.forecast-panel .iframe-wrap {
+  border-radius: 18px;
+  box-shadow: var(--shadow);
 }
 
 .viz-frame {
@@ -163,6 +184,10 @@ code {
 
 .viz-copy {
   margin-bottom: 1rem;
+}
+
+.viz-stack .viz-copy {
+  margin-bottom: 0;
 }
 
 .plain-list {
