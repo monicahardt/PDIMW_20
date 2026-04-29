@@ -14,20 +14,21 @@ const props = withDefaults(defineProps<{
 
 const wrapperRef = ref<HTMLElement | null>(null)
 const wrapperWidth = ref(props.designWidth)
-const wrapperHeight = ref(0)
+const embedHeight = ref<number | null>(null)
 
 let resizeObserver: ResizeObserver | undefined
 
-const visualHeight = computed(() => props.height ?? 'clamp(14rem, 42vh, 24rem)')
+const fallbackHeight = computed(() => props.height ?? 'clamp(14rem, 42vh, 24rem)')
 const frameScale = computed(() => Math.min(1, wrapperWidth.value / props.designWidth))
 const frameWidth = computed(() => Math.max(wrapperWidth.value, props.designWidth))
-const frameHeight = computed(() => {
-  if (!wrapperHeight.value) {
-    return visualHeight.value
-  }
-
-  return `${Math.ceil(wrapperHeight.value / frameScale.value)}px`
-})
+const frameHeight = computed(() => (
+  embedHeight.value ? `${Math.ceil(embedHeight.value)}px` : fallbackHeight.value
+))
+const visualHeight = computed(() => (
+  embedHeight.value
+    ? `${Math.ceil(embedHeight.value * frameScale.value)}px`
+    : fallbackHeight.value
+))
 
 const wrapperStyle = computed(() => ({
   height: visualHeight.value,
@@ -46,11 +47,58 @@ const updateFrameSize = () => {
   }
 
   wrapperWidth.value = wrapperRef.value.clientWidth || props.designWidth
-  wrapperHeight.value = wrapperRef.value.clientHeight
+}
+
+const readEmbedHeight = (payload: unknown): number | null => {
+  if (typeof payload === 'number' && Number.isFinite(payload)) {
+    return payload
+  }
+
+  if (typeof payload === 'string') {
+    const trimmed = payload.trim()
+    const parsedNumber = Number(trimmed)
+
+    if (Number.isFinite(parsedNumber)) {
+      return parsedNumber
+    }
+
+    try {
+      return readEmbedHeight(JSON.parse(trimmed))
+    } catch {
+      return null
+    }
+  }
+
+  if (payload && typeof payload === 'object') {
+    const record = payload as Record<string, unknown>
+
+    if (typeof record.height === 'number' && Number.isFinite(record.height)) {
+      return record.height
+    }
+  }
+
+  return null
+}
+
+const syncEmbedHeight = (event: MessageEvent) => {
+  const iframe = wrapperRef.value?.querySelector('iframe')
+
+  if (!iframe || event.source !== iframe.contentWindow) {
+    return
+  }
+
+  const nextHeight = readEmbedHeight(event.data)
+
+  if (!nextHeight) {
+    return
+  }
+
+  embedHeight.value = nextHeight
 }
 
 onMounted(() => {
   updateFrameSize()
+  window.addEventListener('message', syncEmbedHeight)
 
   resizeObserver = new ResizeObserver(updateFrameSize)
 
@@ -60,6 +108,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  window.removeEventListener('message', syncEmbedHeight)
   resizeObserver?.disconnect()
 })
 </script>
