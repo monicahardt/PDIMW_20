@@ -4,25 +4,12 @@ import ObservableFrame from '@/components/ObservableFrame.vue'
 
 <template>
   <section class="screen">
-    <div class="screen-copy">
-      <p class="eyebrow">Quick guide</p>
-      <h1>Forecast</h1>
-      <p class="lead">
-        A quick front page with one compact stress view and short, actionable
-        tips based on the bigger patterns in your data.
-      </p>
-    </div>
-
     <section class="forecast-panel">
       <div class="forecast-heading">
         <h2>Today's forecast</h2>
       </div>
       <ObservableFrame
         src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastInteractive"
-        bare
-      />
-      <ObservableFrame
-        src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastTip"
         bare
       />
     </section>
