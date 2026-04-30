@@ -12,6 +12,10 @@ import ObservableFrame from '@/components/ObservableFrame.vue'
         src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastInteractive"
         bare
       />
+      <ObservableFrame
+        src="https://observablehq.com/embed/e28495b80f916eb9@2310?cells=viewof+selectedYear%2Cviewof+selectedWeek%2Cstress_events_mobile"
+        bare
+      />
     </section>
 
     <section class="card">
