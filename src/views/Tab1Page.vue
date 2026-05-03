@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ObservableFrame from '@/components/ObservableFrame.vue'
+import { activeObservableFrames, activeObservableVariant } from '@/data/observableFrameVariants'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -24,25 +25,16 @@ import { RouterLink } from 'vue-router'
         and before late study sessions.
       </p>
     </section>
-
       <ObservableFrame
-        src="https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastInteractive"
+        :key="`today-${activeObservableVariant}`"
+        :src="activeObservableFrames.todayForecast.src"
         bare
       />
       <ObservableFrame
-        src="https://observablehq.com/embed/e28495b80f916eb9@2310?cells=viewof+selectedYear%2Cviewof+selectedWeek%2Cstress_events_mobile"
-        scale-up
-        bare
-      />
-      <ObservableFrame
-        src="https://observablehq.com/embed/e28495b80f916eb9?cells=viewof%20selectedDate%2CrenderStressTimelineLegend"
-        :design-width="450"
-        scale-up
-        bare
-      />
-      <ObservableFrame
-        src="https://observablehq.com/embed/e28495b80f916eb9@2434?cells=viewof+selectedYear%2CrenderYearCalendar"
-        scale-up
+        :key="`weekly-${activeObservableVariant}`"
+        :src="activeObservableFrames.weeklyStressEvents.src"
+        :design-width="activeObservableFrames.weeklyStressEvents.designWidth"
+        :scale-up="activeObservableFrames.weeklyStressEvents.scaleUp"
         bare
       />
     </section>

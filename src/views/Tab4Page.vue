@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { activeObservableVariant, toggleObservableVariant } from '@/data/observableFrameVariants'
+</script>
+
 <template>
   <section class="screen profile-screen">
     <h1 id="goal-heading">Understanding your stress</h1>
@@ -8,6 +12,10 @@
         Predicting, reducing and understanding the stress you feel.
       </p>
     </div>
+
+    <button class="variant-toggle" type="button" @click="toggleObservableVariant">
+      Observable set {{ activeObservableVariant }}
+    </button>
 
     <section class="profile-section" aria-labelledby="goal-heading">
       <h1 id="goal-heading">Your goal</h1>

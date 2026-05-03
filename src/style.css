@@ -408,7 +408,7 @@ code {
   bottom: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.4rem;
   padding:
     0.75rem
@@ -739,6 +739,20 @@ code {
   font-weight: 850;
   min-height: 4rem;
   width: 100%;
+}
+
+.variant-toggle {
+  align-self: start;
+  background: #eef2ff;
+  border: 1px solid #dbe4ff;
+  border-radius: 999px;
+  color: var(--accent-strong);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+  min-height: 2.4rem;
+  padding: 0.55rem 0.9rem;
 }
 
 @media (min-width: 480px) {

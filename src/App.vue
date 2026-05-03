@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 const tabs = [
   { to: '/profile', label: 'Profile' },
   { to: '/overview', label: 'Data' },
+  { to: '/forecast', label: 'Forecast' },
   { to: '/action', label: 'Action' },
 ]
 </script>
