@@ -1,7 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Tab1Page from '@/views/Tab1Page.vue'
 import Tab2Page from '@/views/Tab2Page.vue'
-import Tab3Page from '@/views/Tab3Page.vue'
 import Tab4Page from '@/views/Tab4Page.vue'
 
 const router = createRouter({
@@ -9,26 +8,21 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/tab1',
+      redirect: '/profile',
     },
     {
-      path: '/tab1',
-      name: 'tab1',
+      path: '/overview',
+      name: 'overview',
       component: Tab1Page,
     },
     {
-      path: '/tab2',
-      name: 'tab2',
+      path: '/action',
+      name: 'action',
       component: Tab2Page,
     },
     {
-      path: '/tab3',
-      name: 'tab3',
-      component: Tab3Page,
-    },
-    {
-      path: '/tab4',
-      name: 'tab4',
+      path: '/profile',
+      name: 'profile',
       component: Tab4Page,
     },
   ],

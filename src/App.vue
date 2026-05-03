@@ -2,10 +2,9 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 const tabs = [
-  { to: '/tab1', label: 'Forecast' },
-  { to: '/tab2', label: 'Tips' },
-  { to: '/tab3', label: 'Graphs' },
-  { to: '/tab4', label: 'Profile' },
+  { to: '/profile', label: 'Profile' },
+  { to: '/overview', label: 'Data' },
+  { to: '/action', label: 'Action' },
 ]
 </script>
 

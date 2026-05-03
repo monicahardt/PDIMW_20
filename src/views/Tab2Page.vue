@@ -1,16 +1,24 @@
 <template>
   <section class="screen">
     <div class="screen-copy">
-      <p class="eyebrow">Long-term guidance</p>
-      <h1>Tips</h1>
+      <h1>Recommended tips</h1>
       <p class="lead">
-        A calmer page for lifestyle adjustments that make sense over weeks and
-        months, rather than in-the-moment decisions.
+        On this page you find tips based on the patterns found and highlighted in your data. 
       </p>
     </div>
 
-    <section class="card">
-      <h2>Sleep routine</h2>
+    <section class="tip-card is-highlighted">
+      <p class="mini-label">Highlighted from reflection</p>
+      <h2>Protect the hour before deadlines</h2>
+      <p>
+        Your highest stress peaks cluster before afternoon submissions. Add a
+        10-minute breathing break and finish the final review earlier in the day.
+      </p>
+      <button class="primary-action" type="button">Add to action plan</button>
+    </section>
+
+    <section class="tip-card">
+      <h2>Stabilise sleep routine</h2>
       <p>
         If poor sleep keeps lining up with higher morning stress, the biggest
         long-term win is usually a more consistent wind-down routine.
@@ -22,7 +30,7 @@
       </ul>
     </section>
 
-    <section class="card">
+    <section class="tip-card">
       <h2>Weekly load balancing</h2>
       <p>
         When one weekday is repeatedly more stressful, treat that pattern as a
@@ -35,17 +43,5 @@
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Activity and recovery</h2>
-      <p>
-        If intense activity and high stress tend to arrive together, recovery
-        may need to become part of the plan rather than an afterthought.
-      </p>
-      <ul class="plain-list">
-        <li>Alternate hard training days with lower-stimulation movement like walking or stretching.</li>
-        <li>Protect sleep and food quality during demanding school or work weeks.</li>
-        <li>Track whether body battery deficits show up after certain routines and adjust from there.</li>
-      </ul>
-    </section>
   </section>
 </template>
