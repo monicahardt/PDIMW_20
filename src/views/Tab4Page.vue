@@ -36,7 +36,7 @@ import { activeObservableVariant, toggleObservableVariant } from '@/data/observa
 
       <div class="profile-source-grid">
         <article class="profile-source-card">
-          <strong>Mobile wearable</strong>
+          <strong>Calendar</strong>
           <small><span></span> Auto-connected</small>
         </article>
 
@@ -46,12 +46,12 @@ import { activeObservableVariant, toggleObservableVariant } from '@/data/observa
           <small><span></span> Auto-connected</small>
         </article>
 
-        <article class="profile-source-card">
-          <span class="profile-source-icon is-red" aria-hidden="true">iCal</span>
-          <strong>Calendar</strong>
-          <small><span></span> Wearable</small>
-        </article>
+        
       </div>
+      <article class="profile-source-card-big">
+          <strong>Tracking</strong>
+          <small><span></span> Connect to smartwatch to synchronise data</small>
+        </article>
     </section>
     <button class="start-tracking" type="button">Start tracking</button>
   </section>
