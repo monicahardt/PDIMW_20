@@ -18,7 +18,7 @@ export const observableFrameVariants: Record<ObservableVariant, Record<Observabl
       src: 'https://observablehq.com/embed/e28495b80f916eb9?cells=mobileTodayStressForecastInteractive',
     },
     weeklyStressEvents: {
-      src: 'https://observablehq.com/embed/e28495b80f916eb9?cells=viewof+selectedYear%2Cviewof+selectedWeek%2Cstress_events_mobile',
+      src: 'https://observablehq.com/embed/8499f8e61f4b270d@307?cells=calendarStressMobileL',
       designWidth: 375,
       scaleUp: true,
     },
