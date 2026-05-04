@@ -33,7 +33,7 @@ export const observableFrameVariants: Record<ObservableVariant, Record<Observabl
       src: 'https://observablehq.com/embed/e28495b80f916eb9?cells=mobileWeeklyStressForecastHeatmap',
     },
     weeklyStressEvents: {
-      src: 'https://observablehq.com/embed/e28495b80f916eb9?cells=viewof+selectedYear%2CrenderYearCalendar',
+      src: 'https://observablehq.com/embed/e28495b80f916eb9@2464?cells=viewof+selectedYear%2Cviewof+selectedWeek%2Cstress_events_mobile_B',
       designWidth: 375,
       scaleUp: true,
     },
