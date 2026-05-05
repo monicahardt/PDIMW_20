@@ -7,18 +7,18 @@ import {
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
-  Clock3,
   Gauge,
   HelpCircle,
   Moon,
   RefreshCw,
   ShieldAlert,
-  Sparkles,
 } from "lucide-react";
 import "./styles.css";
 
 type StepId = "preparation" | "collection" | "dashboard" | "reflection" | "action";
 type SleepMode = "poor" | "typical" | "good";
+type ViewMode = "simple" | "advanced";
+type TestPhase = "experience" | "questionnaire" | "results";
 type TimeBlock = "Morning" | "Afternoon" | "Evening" | "Night";
 type EventCategory = "study" | "work" | "social" | "recovery";
 
@@ -55,6 +55,19 @@ type ActionIdea = {
   title: string;
   detail: string;
 };
+
+type SurveyResponse = {
+  id: number;
+  testedView: ViewMode;
+  easyUnderstand: number;
+  usefulInfo: number;
+  reflectPatterns: number;
+  wouldUse: "Yes" | "No";
+  preferredVersion: ViewMode;
+  comment: string;
+};
+
+type SurveyDraft = Omit<SurveyResponse, "id" | "testedView">;
 
 const steps: { id: StepId; label: string }[] = [
   { id: "preparation", label: "Preparation" },
@@ -124,6 +137,15 @@ const categoryLabels: Record<EventCategory, string> = {
 
 const clamp = (min: number, value: number, max: number) => Math.max(min, Math.min(value, max));
 
+const emptySurveyDraft: SurveyDraft = {
+  easyUnderstand: 0,
+  usefulInfo: 0,
+  reflectPatterns: 0,
+  wouldUse: "Yes",
+  preferredVersion: "simple",
+  comment: "",
+};
+
 function buildStressCells(sleepMode: SleepMode): StressCell[] {
   return days.flatMap((day) =>
     blocks.map((block) => {
@@ -185,6 +207,69 @@ function buildTimeline(cell: StressCell): TimelinePoint[] {
 }
 
 function App() {
+  const [viewMode, setViewMode] = React.useState<ViewMode>("simple");
+  const [phase, setPhase] = React.useState<TestPhase>("experience");
+  const [responses, setResponses] = React.useState<SurveyResponse[]>([]);
+  const simpleStressCells = React.useMemo(() => buildStressCells("typical"), []);
+
+  const showExperience = (mode = viewMode) => {
+    setViewMode(mode);
+    setPhase("experience");
+  };
+
+  const openQuestionnaire = () => setPhase("questionnaire");
+
+  const submitResponse = (draft: SurveyDraft) => {
+    setResponses((current) => [
+      ...current,
+      {
+        ...draft,
+        id: Date.now(),
+        testedView: viewMode,
+      },
+    ]);
+    setPhase("results");
+  };
+
+  return (
+    <main className="app-shell">
+      <section className="ab-shell" aria-label="A/B usability test">
+        <ABHeader
+          viewMode={viewMode}
+          phase={phase}
+          responseCount={responses.length}
+          onViewChange={showExperience}
+          onQuestionnaire={openQuestionnaire}
+          onResults={() => setPhase("results")}
+        />
+
+        <div className="ab-content">
+          {phase === "experience" && viewMode === "simple" && (
+            <SimpleInterface stressCells={simpleStressCells} />
+          )}
+          {phase === "experience" && viewMode === "advanced" && <ComparableAdvancedInterface />}
+          {phase === "questionnaire" && (
+            <QuestionnaireScreen
+              viewMode={viewMode}
+              onSubmit={submitResponse}
+              onCancel={() => setPhase("experience")}
+            />
+          )}
+          {phase === "results" && (
+            <ResultsScreen
+              responses={responses}
+              onTrySimple={() => showExperience("simple")}
+              onTryAdvanced={() => showExperience("advanced")}
+              onAddResponse={() => setPhase("questionnaire")}
+            />
+          )}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function AdvancedInterface() {
   const [stepIndex, setStepIndex] = React.useState(0);
   const [sleepMode, setSleepMode] = React.useState<SleepMode>("typical");
   const stressCells = React.useMemo(() => buildStressCells(sleepMode), [sleepMode]);
@@ -202,7 +287,7 @@ function App() {
   const back = () => setStepIndex((index) => Math.max(index - 1, 0));
 
   return (
-    <main className="app-shell">
+    <>
       <section className="prototype" aria-label="The University Effect prototype">
         <ProgressStepper currentIndex={stepIndex} onJump={setStepIndex} />
 
@@ -252,7 +337,423 @@ function App() {
       </section>
 
       {chartModal && <ChartModal title={chartModal} onClose={() => setChartModal(null)} />}
-    </main>
+    </>
+  );
+}
+
+function ABHeader({
+  viewMode,
+  phase,
+  responseCount,
+  onViewChange,
+  onQuestionnaire,
+  onResults,
+}: {
+  viewMode: ViewMode;
+  phase: TestPhase;
+  responseCount: number;
+  onViewChange: (mode: ViewMode) => void;
+  onQuestionnaire: () => void;
+  onResults: () => void;
+}) {
+  return (
+    <header className="ab-topbar">
+      <div className="view-toggle" aria-label="Choose interface version">
+        <span>View:</span>
+        <button
+          type="button"
+          className={viewMode === "simple" && phase === "experience" ? "active" : ""}
+          onClick={() => onViewChange("simple")}
+        >
+          Simple
+        </button>
+        <button
+          type="button"
+          className={viewMode === "advanced" && phase === "experience" ? "active" : ""}
+          onClick={() => onViewChange("advanced")}
+        >
+          Advanced
+        </button>
+      </div>
+      <div className="test-actions">
+        <button type="button" className="secondary-button small" onClick={onQuestionnaire}>
+          Questionnaire
+        </button>
+        <button type="button" className="primary-button small" onClick={onResults}>
+          Results ({responseCount})
+        </button>
+      </div>
+    </header>
+  );
+}
+
+function SimpleInterface({ stressCells }: { stressCells: StressCell[] }) {
+  const totalCalendarMinutes = eventBlocks.reduce((sum, event) => sum + event.minutes, 0);
+  const averageStress = Math.round(
+    stressCells.reduce((sum, cell) => sum + cell.estimate, 0) / stressCells.length,
+  );
+
+  return (
+    <section className="simple-page" aria-label="Simple version">
+      <h1>The University Effect</h1>
+      <p className="simple-description">A simple weekly summary of student stress data.</p>
+
+      <div className="simple-summary" aria-label="Data summary">
+        <SimpleMetric label="Sleep duration" value={sleepProfiles.typical.duration} />
+        <SimpleMetric label="Calendar load" value={formatMinutes(totalCalendarMinutes)} />
+        <SimpleMetric label="Estimated stress" value={`${averageStress}`} />
+      </div>
+
+      <section className="simple-chart" aria-label="Weekly stress heatmap">
+        <StaticHeatmapChart stressCells={stressCells} />
+      </section>
+
+      <p>Stress varies across the week.</p>
+    </section>
+  );
+}
+
+function ComparableAdvancedInterface() {
+  const [selectedKey, setSelectedKey] = React.useState("Wed-Afternoon");
+  const stressCells = React.useMemo(() => buildStressCells("typical"), []);
+  const selectedCell = stressCells.find((cell) => `${cell.day}-${cell.block}` === selectedKey) ?? stressCells[0];
+  const totalCalendarMinutes = eventBlocks.reduce((sum, event) => sum + event.minutes, 0);
+  const averageStress = Math.round(
+    stressCells.reduce((sum, cell) => sum + cell.estimate, 0) / stressCells.length,
+  );
+
+  return (
+    <section className="simple-page advanced-comparison-page" aria-label="Advanced version">
+      <h1>The University Effect</h1>
+      <p className="simple-description">A guided weekly summary of student stress data.</p>
+
+      <div className="simple-summary" aria-label="Data summary">
+        <SimpleMetric label="Sleep duration" value={sleepProfiles.typical.duration} />
+        <SimpleMetric label="Calendar load" value={formatMinutes(totalCalendarMinutes)} />
+        <SimpleMetric label="Estimated stress" value={`${averageStress}`} />
+      </div>
+
+      <section className="simple-chart" aria-label="Weekly stress heatmap">
+        <InteractiveSimpleHeatmap
+          stressCells={stressCells}
+          selectedKey={selectedKey}
+          onSelect={(cell) => setSelectedKey(`${cell.day}-${cell.block}`)}
+        />
+      </section>
+
+      <section className="advanced-guidance-grid" aria-label="Selected stress explanation">
+        <article className="advanced-guidance-panel">
+          <h2>Selected Stress Explanation</h2>
+          <InlineTimelineChart cell={selectedCell} />
+        </article>
+        <article className="advanced-guidance-panel compact">
+          <h2>What this suggests</h2>
+          <p>
+            {selectedCell.day} {selectedCell.block.toLowerCase()} appears higher when calendar load and
+            sleep context are considered.
+          </p>
+          <h2>Possible action</h2>
+          <p>{guidedActionText(selectedCell)}</p>
+        </article>
+      </section>
+    </section>
+  );
+}
+
+function SimpleMetric({ label, value }: { label: string; value: string }) {
+  return (
+    <article className="simple-metric">
+      <p>{label}</p>
+      <strong>{value}</strong>
+    </article>
+  );
+}
+
+function StaticHeatmapChart({ stressCells }: { stressCells: StressCell[] }) {
+  return (
+    <div className="static-heatmap" role="img" aria-label="Weekly estimated stress heatmap">
+      <div />
+      {days.map((day) => <span key={day}>{day}</span>)}
+      {blocks.map((block) => (
+        <React.Fragment key={block}>
+          <span className="row-label">{block}</span>
+          {days.map((day) => {
+            const cell = stressCells.find((item) => item.day === day && item.block === block)!;
+            return (
+              <div key={`${cell.day}-${cell.block}`} className={stressClass(cell.estimate)}>
+                {cell.estimate}
+              </div>
+            );
+          })}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+}
+
+function InteractiveSimpleHeatmap({
+  stressCells,
+  selectedKey,
+  onSelect,
+}: {
+  stressCells: StressCell[];
+  selectedKey: string;
+  onSelect: (cell: StressCell) => void;
+}) {
+  return (
+    <div className="static-heatmap interactive" role="grid" aria-label="Weekly estimated stress heatmap">
+      <div />
+      {days.map((day) => <span key={day}>{day}</span>)}
+      {blocks.map((block) => (
+        <React.Fragment key={block}>
+          <span className="row-label">{block}</span>
+          {days.map((day) => {
+            const cell = stressCells.find((item) => item.day === day && item.block === block)!;
+            const key = `${cell.day}-${cell.block}`;
+            return (
+              <button
+                key={key}
+                type="button"
+                className={`${stressClass(cell.estimate)} ${selectedKey === key ? "selected" : ""}`}
+                onClick={() => onSelect(cell)}
+                aria-label={`${day} ${block}: estimated stress ${cell.estimate}`}
+              >
+                {cell.estimate}
+              </button>
+            );
+          })}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+}
+
+function QuestionnaireScreen({
+  viewMode,
+  onSubmit,
+  onCancel,
+}: {
+  viewMode: ViewMode;
+  onSubmit: (draft: SurveyDraft) => void;
+  onCancel: () => void;
+}) {
+  const [draft, setDraft] = React.useState<SurveyDraft>({
+    ...emptySurveyDraft,
+    preferredVersion: viewMode,
+  });
+
+  const setRating = (
+    field: "easyUnderstand" | "usefulInfo" | "reflectPatterns",
+    value: number,
+  ) => {
+    setDraft((current) => ({ ...current, [field]: value }));
+  };
+
+  const ready = draft.easyUnderstand > 0 && draft.usefulInfo > 0 && draft.reflectPatterns > 0;
+
+  return (
+    <section className="questionnaire-page" aria-label="Usability questionnaire">
+      <div className="questionnaire-card">
+        <p className="eyebrow">Usability test</p>
+        <h1>Questionnaire for {viewMode === "simple" ? "Simple" : "Advanced"} version</h1>
+
+        <RatingQuestion
+          label="Was this interface easy to navigate?"
+          value={draft.easyUnderstand}
+          onChange={(value) => setRating("easyUnderstand", value)}
+        />
+        <RatingQuestion
+          label="Was it easy to understand the stress pattern?"
+          value={draft.usefulInfo}
+          onChange={(value) => setRating("usefulInfo", value)}
+        />
+        <RatingQuestion
+          label="Did this help you reflect on stress patterns?"
+          value={draft.reflectPatterns}
+          onChange={(value) => setRating("reflectPatterns", value)}
+        />
+
+        <ChoiceQuestion
+          label="Could you take action from this interface?"
+          options={["Yes", "No"]}
+          value={draft.wouldUse}
+          onChange={(value) => setDraft((current) => ({ ...current, wouldUse: value as "Yes" | "No" }))}
+        />
+
+        <ChoiceQuestion
+          label="Which version did you prefer?"
+          options={["Simple", "Advanced"]}
+          value={draft.preferredVersion === "simple" ? "Simple" : "Advanced"}
+          onChange={(value) =>
+            setDraft((current) => ({
+              ...current,
+              preferredVersion: value === "Simple" ? "simple" : "advanced",
+            }))
+          }
+        />
+
+        <label className="open-question">
+          <span>What was useful or confusing?</span>
+          <textarea
+            value={draft.comment}
+            onChange={(event) => setDraft((current) => ({ ...current, comment: event.target.value }))}
+            rows={3}
+          />
+        </label>
+
+        <div className="questionnaire-actions">
+          <button type="button" className="secondary-button" onClick={onCancel}>
+            Back to interface
+          </button>
+          <button type="button" className="primary-button" onClick={() => onSubmit(draft)} disabled={!ready}>
+            Submit response
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function RatingQuestion({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: number;
+  onChange: (value: number) => void;
+}) {
+  return (
+    <fieldset className="survey-question">
+      <legend>{label}</legend>
+      <div className="rating-scale">
+        {[1, 2, 3, 4, 5].map((score) => (
+          <button
+            key={score}
+            type="button"
+            className={value === score ? "active" : ""}
+            onClick={() => onChange(score)}
+            aria-pressed={value === score}
+          >
+            {score}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  );
+}
+
+function ChoiceQuestion({
+  label,
+  options,
+  value,
+  onChange,
+}: {
+  label: string;
+  options: string[];
+  value: string;
+  onChange: (value: string) => void;
+}) {
+  return (
+    <fieldset className="survey-question">
+      <legend>{label}</legend>
+      <div className="choice-row">
+        {options.map((option) => (
+          <button
+            key={option}
+            type="button"
+            className={value === option ? "active" : ""}
+            onClick={() => onChange(option)}
+            aria-pressed={value === option}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  );
+}
+
+function ResultsScreen({
+  responses,
+  onTrySimple,
+  onTryAdvanced,
+  onAddResponse,
+}: {
+  responses: SurveyResponse[];
+  onTrySimple: () => void;
+  onTryAdvanced: () => void;
+  onAddResponse: () => void;
+}) {
+  const simpleStats = surveyStats(responses, "simple");
+  const advancedStats = surveyStats(responses, "advanced");
+  const simplePreference = responses.filter((response) => response.preferredVersion === "simple").length;
+  const advancedPreference = responses.filter((response) => response.preferredVersion === "advanced").length;
+
+  return (
+    <section className="results-page" aria-label="Usability test results">
+      <div className="results-card">
+        <p className="eyebrow">A/B usability test</p>
+        <h1>Results from participants</h1>
+
+        {responses.length === 0 ? (
+          <p className="empty-results">No participant responses yet.</p>
+        ) : (
+          <>
+            <div className="results-grid">
+              <ResultBlock title="Simple" stats={simpleStats} />
+              <ResultBlock title="Advanced" stats={advancedStats} />
+            </div>
+            <div className="preference-summary">
+              <span>Preferred Simple: <strong>{simplePreference}</strong></span>
+              <span>Preferred Advanced: <strong>{advancedPreference}</strong></span>
+            </div>
+          </>
+        )}
+
+        <div className="questionnaire-actions">
+          <button type="button" className="secondary-button" onClick={onTrySimple}>
+            Try Simple Version
+          </button>
+          <button type="button" className="secondary-button" onClick={onTryAdvanced}>
+            Try Advanced Version
+          </button>
+          <button type="button" className="primary-button" onClick={onAddResponse}>
+            Add response
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ResultBlock({ title, stats }: { title: string; stats: ReturnType<typeof surveyStats> }) {
+  return (
+    <article className="result-block">
+      <h2>{title}</h2>
+      <dl>
+        <div>
+          <dt>Responses</dt>
+          <dd>{stats.count}</dd>
+        </div>
+        <div>
+          <dt>Easy to navigate</dt>
+          <dd>{stats.easyUnderstand}</dd>
+        </div>
+        <div>
+          <dt>Understand stress</dt>
+          <dd>{stats.usefulInfo}</dd>
+        </div>
+        <div>
+          <dt>Reflect on stress</dt>
+          <dd>{stats.reflectPatterns}</dd>
+        </div>
+        <div>
+          <dt>Could take action</dt>
+          <dd>{stats.wouldUseYes}</dd>
+        </div>
+      </dl>
+    </article>
   );
 }
 
@@ -838,6 +1339,30 @@ function ChartModal({ title, onClose }: { title: string; onClose: () => void }) 
   );
 }
 
+function formatMinutes(minutes: number) {
+  const hours = Math.floor(minutes / 60);
+  const remainder = minutes % 60;
+  if (remainder === 0) return `${hours}h`;
+  return `${hours}h ${remainder}m`;
+}
+
+function averageScore(responses: SurveyResponse[], field: "easyUnderstand" | "usefulInfo" | "reflectPatterns") {
+  if (responses.length === 0) return "n/a";
+  const average = responses.reduce((sum, response) => sum + response[field], 0) / responses.length;
+  return average.toFixed(1);
+}
+
+function surveyStats(responses: SurveyResponse[], testedView: ViewMode) {
+  const filtered = responses.filter((response) => response.testedView === testedView);
+  return {
+    count: filtered.length,
+    easyUnderstand: averageScore(filtered, "easyUnderstand"),
+    usefulInfo: averageScore(filtered, "usefulInfo"),
+    reflectPatterns: averageScore(filtered, "reflectPatterns"),
+    wouldUseYes: filtered.filter((response) => response.wouldUse === "Yes").length,
+  };
+}
+
 function eventSummary(cell: StressCell) {
   if (cell.events.length === 0) return "No event";
   return cell.events.map((event) => categoryLabels[event.category]).join(" + ");
@@ -872,6 +1397,22 @@ function adviceText(cell: StressCell, sleepMode: SleepMode) {
   }
 
   return `${cell.day} ${cell.block.toLowerCase()} appears calmer. It may be a useful recovery window.`;
+}
+
+function guidedActionText(cell: StressCell) {
+  if (cell.estimate >= 76 && cell.eventMinutes >= 150) {
+    return "Consider adding a break or moving demanding study work away from this block.";
+  }
+
+  if (cell.estimate >= 56) {
+    return "Keep this block manageable and avoid adding extra deadlines or meetings here.";
+  }
+
+  if (cell.estimate >= 36) {
+    return "This may be a reasonable focus block if the plan stays realistic.";
+  }
+
+  return "This may be a useful recovery window.";
 }
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
