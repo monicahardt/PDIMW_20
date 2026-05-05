@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ObservableFrame from '@/components/ObservableFrame.vue'
-import { activeObservableFrames, activeObservableVariant } from '@/data/observableFrameVariants'
+import { observableFrames } from '@/data/observableFrames'
 </script>
 
 <template>
@@ -19,10 +19,9 @@ import { activeObservableFrames, activeObservableVariant } from '@/data/observab
       </div>
 
       <ObservableFrame
-        :key="`combined-${activeObservableVariant}`"
-        :src="activeObservableFrames.combinedForecast.src"
-        :design-width="activeObservableFrames.combinedForecast.designWidth"
-        :scale-up="activeObservableFrames.combinedForecast.scaleUp"
+        :src="observableFrames.combinedForecast.src"
+        :design-width="observableFrames.combinedForecast.designWidth"
+        :scale-up="observableFrames.combinedForecast.scaleUp"
         bare
       />
     </section>

@@ -5,7 +5,7 @@ const tabs = [
   { to: '/profile', label: 'Profile' },
   { to: '/overview', label: 'Data' },
   { to: '/forecast', label: 'Forecast' },
-  { to: '/action', label: 'Action' },
+  // { to: '/action', label: 'Action' },
 ]
 </script>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ObservableFrame from '@/components/ObservableFrame.vue'
-import { activeObservableFrames, activeObservableVariant } from '@/data/observableFrameVariants'
+import { observableFrames } from '@/data/observableFrames'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -26,15 +26,19 @@ import { RouterLink } from 'vue-router'
       </p>
     </section>
       <ObservableFrame
-        :key="`today-${activeObservableVariant}`"
-        :src="activeObservableFrames.todayForecast.src"
+        :src="observableFrames.todayForecast.src"
         bare
       />
       <ObservableFrame
-        :key="`weekly-${activeObservableVariant}`"
-        :src="activeObservableFrames.weeklyStressEvents.src"
-        :design-width="activeObservableFrames.weeklyStressEvents.designWidth"
-        :scale-up="activeObservableFrames.weeklyStressEvents.scaleUp"
+        :src="observableFrames.weeklyStressEvents.src"
+        :design-width="observableFrames.weeklyStressEvents.designWidth"
+        :scale-up="observableFrames.weeklyStressEvents.scaleUp"
+        bare
+      />
+      <ObservableFrame
+        :src="observableFrames.weeklyStressEventCategories.src"
+        :design-width="observableFrames.weeklyStressEvents.designWidth"
+        :scale-up="observableFrames.weeklyStressEvents.scaleUp"
         bare
       />
     </section>
