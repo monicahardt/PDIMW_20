@@ -27,18 +27,21 @@ import { RouterLink } from 'vue-router'
     </section>
     
       <ObservableFrame
+        :key="`weekly-${observableFrames.weeklyStressEvents.src}`"
         :src="observableFrames.weeklyStressEvents.src"
         :design-width="observableFrames.weeklyStressEvents.designWidth"
         :scale-up="observableFrames.weeklyStressEvents.scaleUp"
         bare
       />
       <ObservableFrame
+        :key="`categories-${observableFrames.weeklyStressEventCategories.src}`"
         :src="observableFrames.weeklyStressEventCategories.src"
-        :design-width="observableFrames.weeklyStressEvents.designWidth"
-        :scale-up="observableFrames.weeklyStressEvents.scaleUp"
+        :design-width="observableFrames.weeklyStressEventCategories.designWidth"
+        :scale-up="observableFrames.weeklyStressEventCategories.scaleUp"
         bare
       />
       <ObservableFrame
+        :key="`sleep-${observableFrames.sleepStress.src}`"
         :src="observableFrames.sleepStress.src"
         :design-width="observableFrames.sleepStress.designWidth"
         :scale-up="observableFrames.sleepStress.scaleUp"

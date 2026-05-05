@@ -765,6 +765,12 @@ code {
   padding: 0.55rem 0.9rem;
 }
 
+.variant-toggle.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
 @media (min-width: 480px) {
   :root {
     --page-padding: 1.25rem;

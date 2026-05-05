@@ -11,6 +11,7 @@ import { observableFrames } from '@/data/observableFrames'
 
     <section class="forecast-panel">
       <ObservableFrame
+        :key="`combined-${observableFrames.combinedForecast.src}`"
         :src="observableFrames.combinedForecast.src"
         :design-width="observableFrames.combinedForecast.designWidth"
         :scale-up="observableFrames.combinedForecast.scaleUp"

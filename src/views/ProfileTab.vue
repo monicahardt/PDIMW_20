@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { activeObservableVersion, toggleBVersion } from '@/data/observableFrames'
+</script>
+
 <template>
   <section class="screen profile-screen">
     <h1 id="goal-heading">Understanding your stress</h1>
@@ -8,6 +12,16 @@
         Predicting, reducing and understanding the stress you feel.
       </p>
     </div>
+
+    <button
+      class="variant-toggle"
+      :class="{ 'is-active': activeObservableVersion === 'B' }"
+      type="button"
+      :aria-pressed="activeObservableVersion === 'B'"
+      @click="toggleBVersion"
+    >
+      B version
+    </button>
 
     <section class="profile-section" aria-labelledby="goal-heading">
       <h1 id="goal-heading">Your goal</h1>
