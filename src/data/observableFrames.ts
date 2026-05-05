@@ -4,12 +4,11 @@ type ObservableFrameConfig = {
   scaleUp?: boolean
 }
 
-type ObservableFrameKey = 'todayForecast' | 'weeklyStressEvents' | 'weeklyStressEventCategories' | 'combinedForecast'
+type ObservableFrameKey = 'weeklyStressEvents' | 'weeklyStressEventCategories' | 'combinedForecast' | 'sleepStress'
 
 export const observableFrames: Record<ObservableFrameKey, ObservableFrameConfig> = {
-  todayForecast: {
-    src: 'https://observablehq.com/embed/e28495b80f916eb9@2518?cells=sleepStressBarsLineDrilldownPhoneSizeNewCool',
-    designWidth: 200,
+  sleepStress: {
+    src: 'https://observablehq.com/embed/e28495b80f916eb9@2580?cells=sleepStressBarsLineDrilldownPhoneSizeNewCoolAAA',
     scaleUp: true,
   },
   weeklyStressEvents: {

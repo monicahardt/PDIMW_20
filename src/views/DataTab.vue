@@ -25,8 +25,10 @@ import { RouterLink } from 'vue-router'
         and before late study sessions.
       </p>
     </section>
-      <ObservableFrame
-        :src="observableFrames.todayForecast.src"
+    <ObservableFrame
+        :src="observableFrames.sleepStress.src"
+        :design-width="observableFrames.sleepStress.designWidth"
+        :scale-up="observableFrames.sleepStress.scaleUp"
         bare
       />
       <ObservableFrame
@@ -41,6 +43,7 @@ import { RouterLink } from 'vue-router'
         :scale-up="observableFrames.weeklyStressEvents.scaleUp"
         bare
       />
+      
     </section>
 
     <RouterLink class="tips-cta" to="/action">
