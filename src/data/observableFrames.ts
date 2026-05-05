@@ -20,7 +20,7 @@ export const observableFrames: Record<ObservableFrameKey, ObservableFrameConfig>
     scaleUp: true,
   },
   combinedForecast: {
-    src: 'https://observablehq.com/embed/8499f8e61f4b270d@435?cells=mobileStressForecastSlimSliderWheel',
+    src: 'https://observablehq.com/embed/8499f8e61f4b270d@457?cells=mobileStressForecastSlimSliderWheel',
     designWidth: 425,
     scaleUp: true,
   },
