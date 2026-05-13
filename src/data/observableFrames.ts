@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 type ObservableFrameConfig = {
   src: string
   designWidth?: number
+  heightPadding?: number
   scaleUp?: boolean
 }
 
@@ -23,9 +24,11 @@ export const observableFrameSets: Record<ObservableVersion, Record<ObservableFra
       src: 'https://observablehq.com/embed/e28495b80f916eb9@2580?cells=sleepStressBarsLineDrilldownPhoneSizeNewCoolAAA',
       scaleUp: true,
     },
+    
     combinedForecast: {
-      src: 'https://observablehq.com/embed/8499f8e61f4b270d@457?cells=mobileStressForecastSlimSliderWheel',
+      src: 'https://observablehq.com/embed/8499f8e61f4b270d@478?cells=mobileStressForecastSlimSliderWheel',
       designWidth: 425,
+      heightPadding: 180,
       scaleUp: true,
     },
   },
@@ -45,6 +48,7 @@ export const observableFrameSets: Record<ObservableVersion, Record<ObservableFra
     combinedForecast: {
       src: '',
       designWidth: 425,
+      heightPadding: 48,
       scaleUp: true,
     },
   },

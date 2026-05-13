@@ -8,9 +8,11 @@ const props = withDefaults(defineProps<{
   height?: string
   bare?: boolean
   designWidth?: number
+  heightPadding?: number
   scaleUp?: boolean
 }>(), {
   designWidth: 930,
+  heightPadding: 16,
   scaleUp: false,
 })
 
@@ -24,7 +26,7 @@ let resizeObserver: ResizeObserver | undefined
 
 const fallbackHeight = computed(() => props.height ?? 'clamp(26rem, 58vh, 36rem)')
 const contentHeight = computed(() => (
-  embedHeight.value ? `${Math.ceil(embedHeight.value + 16)}px` : fallbackHeight.value
+  embedHeight.value ? `${Math.ceil(embedHeight.value + props.heightPadding)}px` : fallbackHeight.value
 ))
 const frameScale = computed(() => {
   const scale = wrapperWidth.value / props.designWidth
@@ -41,7 +43,7 @@ const frameHeight = computed(() => (
 ))
 const visualHeight = computed(() => (
   embedHeight.value
-    ? `${Math.ceil((embedHeight.value + 16) * frameScale.value)}px`
+    ? `${Math.ceil((embedHeight.value + props.heightPadding) * frameScale.value)}px`
     : fallbackHeight.value
 ))
 

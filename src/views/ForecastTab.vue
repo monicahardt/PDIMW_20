@@ -14,6 +14,7 @@ import { observableFrames } from '@/data/observableFrames'
         :key="`combined-${observableFrames.combinedForecast.src}`"
         :src="observableFrames.combinedForecast.src"
         :design-width="observableFrames.combinedForecast.designWidth"
+        :height-padding="observableFrames.combinedForecast.heightPadding"
         :scale-up="observableFrames.combinedForecast.scaleUp"
         bare
       />
